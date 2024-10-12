@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\v1\Document;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\v1\ApiController;
 use App\Http\Requests\AssignDocumentRequest;
 use App\Models\Document;
 use App\Models\Signature;
@@ -11,7 +11,7 @@ use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-class DocumentSignatureController extends Controller
+class DocumentSignatureController extends ApiController
 {
     public function __construct(
         private Gate $gate,

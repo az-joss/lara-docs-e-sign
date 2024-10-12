@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\v1\Document;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\v1\ApiController;
 use App\Http\Requests\Document\StoreDocumentRequest;
 use App\Http\Requests\Document\UpdateDocumentRequest;
 use App\Http\Resources\DocumentResource;
@@ -13,7 +13,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class DocumentController extends Controller
+class DocumentController extends ApiController
 {
     public function __construct(
         private Gate $gate,

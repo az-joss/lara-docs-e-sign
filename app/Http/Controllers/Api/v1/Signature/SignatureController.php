@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\v1\Signature;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\v1\ApiController;
 use App\Http\Requests\Signature\StoreSignatureRequest;
 use App\Http\Requests\Signature\UpdateSignatureRequest;
 use App\Http\Resources\SignatureResource;
@@ -12,7 +12,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class SignatureController extends Controller
+class SignatureController extends ApiController
 {
     public function __construct(
         private Gate $gate
